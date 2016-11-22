@@ -1,4 +1,4 @@
 $(document).ready(function(){
-    var socket = io();
-    socket.emit('m', 'test');
+    var sock = new RawConnection('localhost:8080');
+    sock.send('test');
 });
